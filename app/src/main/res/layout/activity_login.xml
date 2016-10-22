@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_weight="0.05"
+    android:background="@color/colorback1"
+    android:layout_marginTop="5dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/cart"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:text="登录即付账号"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="25dp"
+     android:layout_marginTop="3dp">
+
+     <ImageView
+         android:layout_width="10dp"
+         android:layout_height="15dp"
+         android:id="@+id/imageView2"
+
+         android:src="@drawable/mobile"
+         android:layout_marginLeft="260dp" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/mobile_login"
+         android:id="@+id/textView2"
+         android:layout_alignParentTop="true"
+         android:layout_toEndOf="@+id/imageView2" />
+ </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_marginTop="15dp" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_item"
+        android:id="@+id/checkBox"
+        android:layout_weight="0.05"
+        android:layout_marginTop="7dp" />
+
+    <Button
+        android:background="@color/colorloginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/colorwhite"
+        android:textSize="25dp"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/aggrement"
+    android:id="@+id/checkBox2"
+    android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:id="@+id/textView3"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/colorterms"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/checkBox2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configure"
+        android:textSize="15dp"
+        android:textColor="@color/colorred"
+        android:id="@+id/textView4"
+        android:layout_weight="0.05"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
